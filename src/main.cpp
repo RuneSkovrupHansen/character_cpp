@@ -3,8 +3,6 @@
 #include "character/character.hpp"
 
 int main(int argc, char *argv[]) {
-    std::cout << "Hello World!" << std::endl;
-
     Character c = Character();
 
     std::cout << c << std::endl;
