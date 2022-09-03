@@ -7,7 +7,8 @@ cc_library(
         "include/character/types.hpp",
         "include/character/character.hpp",
     ],
-    includes = ["include"]
+    includes = ["include"],
+    visibility = ["//visibility:public"]
 )
 
 cc_binary(
