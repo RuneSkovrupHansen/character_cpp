@@ -1,0 +1,21 @@
+cc_library(
+    name="character_lib",
+    srcs = [
+        "src/character.cpp",
+    ],
+    hdrs = [
+        "include/character/types.hpp",
+        "include/character/character.hpp",
+    ],
+    includes = ["include"]
+)
+
+cc_binary(
+    name="main",
+    srcs = [
+        "src/main.cpp",
+    ],
+    deps = [
+        ":character_lib",
+    ],
+)
